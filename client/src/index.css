@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-1: #020617;
+  --bg-2: #0f172a;
+  --text-1: #f8fafc;
+  --text-2: #94a3b8;
+  --brand-1: #22d3ee;
+  --brand-2: #f97316;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text-1);
+  background:
+    radial-gradient(circle at 10% 15%, rgba(34, 211, 238, 0.18), transparent 35%),
+    radial-gradient(circle at 85% 20%, rgba(249, 115, 22, 0.2), transparent 28%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.glass-card {
+  @apply border border-slate-800/80 bg-slate-900/60 backdrop-blur-md;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full border border-cyan-300/70 bg-cyan-300/10 px-6 py-3 text-sm font-semibold text-cyan-200 transition duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-300/20;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900 px-6 py-3 text-sm font-semibold text-slate-200 transition duration-300 hover:-translate-y-1 hover:border-orange-300 hover:text-orange-200;
+}

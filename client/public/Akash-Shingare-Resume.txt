@@ -1,0 +1,20 @@
+Akash Shingare
+Engineering Student | Web Developer | AI Enthusiast
+Location: India
+
+Summary:
+Passionate developer working on AI, Web Development, and Cybersecurity projects.
+
+Skills:
+- HTML, CSS, JavaScript, React.js
+- Java, MySQL
+- AI Fundamentals
+
+Projects:
+- BookShelf Platform
+- AI Career Coach
+- Mental Health Care Platform
+- Upstyle E-commerce Website
+
+LinkedIn: https://www.linkedin.com
+GitHub: https://github.com
