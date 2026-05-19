@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { skills } from "../data/portfolioData";
 import { fadeInUp, staggerContainer } from "../utils/animations";
 
 const skillCategories = {
@@ -8,16 +7,24 @@ const skillCategories = {
   "Web Development": ["HTML", "CSS", "React.js", "Node.js", "Express.js", "Tailwind CSS", "REST APIs"],
   "Databases": ["MySQL", "MongoDB"],
   "Core CS": ["DSA", "OOP", "DBMS", "Operating System", "Computer Networks", "Cloud Basics"],
-  "Tools & IDE": ["Git & GitHub", "VS Code", "Eclipse IDE", "AutoCAD", "ZWCAD", "Scilab", "Canva", "MS Office"],
+  "Tools & IDE": [
+    "Git & GitHub",
+    "VS Code",
+    "Eclipse IDE",
+    "AutoCAD",
+    "ZWCAD",
+    "Scilab",
+    "Canva",
+    "MS Office",
+    "Power BI",
+    "Tableau",
+    "UiPath",
+    "YoloLabel",
+  ],
   "Soft Skills": ["Communication", "Teamwork", "Leadership", "Adaptability", "Time Management"],
 };
 
 const Skills = () => {
-  const getSkillLevel = (skillName) => {
-    const skill = skills.find((s) => s.name === skillName);
-    return skill?.level || 0;
-  };
-
   return (
     <section id="skills" className="py-20">
       <div className="section-shell">
@@ -38,32 +45,17 @@ const Skills = () => {
               className="glass-card rounded-2xl p-6"
             >
               <h3 className="mb-5 text-lg font-semibold text-cyan-300">{category}</h3>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {categorySkills.map((skillName) => {
-                  const level = getSkillLevel(skillName);
-                  return (
-                    <motion.article
-                      key={skillName}
-                      variants={fadeInUp}
-                      whileHover={{ scale: 1.05 }}
-                      className="glass-card rounded-xl p-4"
-                    >
-                      <div className="mb-2 flex items-center justify-between">
-                        <h4 className="font-medium text-slate-100">{skillName}</h4>
-                        <span className="text-xs text-cyan-300">{level}%</span>
-                      </div>
-                      <div className="h-1.5 overflow-hidden rounded-full bg-slate-800">
-                        <motion.div
-                          className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-orange-400"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1.2, ease: "easeOut" }}
-                        />
-                      </div>
-                    </motion.article>
-                  );
-                })}
+              <div className="flex flex-wrap gap-3">
+                {categorySkills.map((skillName) => (
+                  <motion.span
+                    key={skillName}
+                    variants={fadeInUp}
+                    whileHover={{ y: -2 }}
+                    className="rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-100"
+                  >
+                    {skillName}
+                  </motion.span>
+                ))}
               </div>
             </motion.div>
           ))}

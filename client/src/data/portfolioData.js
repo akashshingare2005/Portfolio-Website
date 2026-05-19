@@ -12,9 +12,12 @@ export const personalInfo = {
   role: "Engineering Student | Web Developer | AI Enthusiast",
   location: "India",
   bio: "Passionate developer working on AI, Web Development, and Full-Stack projects, focused on creating user-friendly applications and innovative digital solutions.",
+  email: "akashshingare217@gmail.com",
+  phone: "+91 9689861125",
   socials: {
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    github: "https://github.com/akashshingare2005",
+    linkedin: "https://www.linkedin.com/in/akash-shingare-30bb12280?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    instagram: "https://www.instagram.com/akkki_217",
   },
 };
 

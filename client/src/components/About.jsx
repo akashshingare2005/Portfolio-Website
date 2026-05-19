@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { personalInfo, skills } from "../data/portfolioData";
+import { personalInfo } from "../data/portfolioData";
 import { fadeInUp, staggerContainer } from "../utils/animations";
 
 const About = () => {
@@ -27,19 +27,6 @@ const About = () => {
               I am based in {personalInfo.location} and enjoy transforming ideas into reliable products using AI,
               modern frontend engineering, and scalable full-stack architecture.
             </p>
-            <div className="mt-5">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Core Skills</p>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span
-                    key={skill.name}
-                    className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-xs text-slate-300"
-                  >
-                    {skill.name}
-                  </span>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="glass-card rounded-2xl p-6">
