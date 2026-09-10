@@ -5,8 +5,10 @@ import { fadeInUp, staggerContainer } from "../utils/animations";
 const skillCategories = {
   "Programming Languages": ["C", "C++", "Python", "Java", "JavaScript", "Swing"],
   "Web Development": ["HTML", "CSS", "React.js", "Node.js", "Express.js", "Tailwind CSS", "REST APIs"],
-  "Databases": ["MySQL", "MongoDB"],
-  "Core CS": ["DSA", "OOP", "DBMS", "Operating System", "Computer Networks", "Cloud Basics"],
+  "Databases": ["MySQL", "MongoDB", "MongoDB Atlas"],
+  "AI & Machine Learning": ["Machine Learning", "Scikit-learn", "Pandas", "NumPy", "LLM API Integration", "Prompt Engineering"],
+  "Core CS": ["DSA", "OOP", "DBMS", "Operating System", "Computer Networks"],
+  "Cloud & DevOps": ["Cloud Computing Fundamentals", "Docker Basics", "Vercel", "Render"],
   "Tools & IDE": [
     "Git & GitHub",
     "VS Code",

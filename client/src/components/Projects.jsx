@@ -24,7 +24,7 @@ const Projects = () => {
         <SectionHeading
           eyebrow="Portfolio"
           title="Featured Projects"
-          subtitle="8 full-stack and specialized projects showcasing expertise in web development, AI, and systems design."
+          subtitle="10 full-stack and specialized projects showcasing expertise in web development, AI, and systems design."
         />
 
         <motion.div
@@ -109,14 +109,16 @@ const Projects = () => {
                   >
                     <FaGithub size={16} /> GitHub
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-300 hover:text-orange-200 transition"
-                  >
-                    <HiOutlineExternalLink size={16} /> Live Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-300 hover:text-orange-200 transition"
+                    >
+                      <HiOutlineExternalLink size={16} /> Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.article>

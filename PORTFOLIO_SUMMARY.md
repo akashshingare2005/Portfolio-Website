@@ -136,34 +136,34 @@ Total Projects: 8 | Showing: 4
 
 ```
 ┌─────────────────────────────────────┐
-│         Frontend (Vercel)            │
+│         Frontend (Vercel)           │
 ├─────────────────────────────────────┤
 │ React + Tailwind + Framer Motion    │
-│ - Responsive Components              │
-│ - Smooth Animations                  │
-│ - Toast Notifications                │
-│ - Form Handling                       │
+│ - Responsive Components             │
+│ - Smooth Animations                 │
+│ - Toast Notifications               │
+│ - Form Handling                     │
 └─────────────────┬───────────────────┘
                   │
                   │ REST API (Axios)
                   │
 ┌─────────────────▼───────────────────┐
-│      Backend (Render)                │
+│      Backend (Render)               │
 ├─────────────────────────────────────┤
 │ Express.js Server                   │
-│ - REST API Routes                    │
+│ - REST API Routes                   │
 │ - Middleware (CORS, Error Handler)  │
-│ - MVC Structure                      │
+│ - MVC Structure                     │
 └─────────────────┬───────────────────┘
                   │
                   │ Mongoose ODM
                   │
-┌─────────────────▼───────────────────┐
+┌─────────────────▼─────────────────── ┐
 │   MongoDB (MongoDB Atlas)            │
-├─────────────────────────────────────┤
+├───────────────────────────────────── ┤
 │ Collections:                         │
 │ - ContactMessages (from contact form)│
-└─────────────────────────────────────┘
+└───────────────────────────────────── ┘
 ```
 
 ---
@@ -265,18 +265,18 @@ Before showing to recruiters:
 ## 🏁 Final Status
 
 ```
-┌─────────────────────────────────────────┐
-│   🎉 PORTFOLIO COMPLETE & READY 🎉      │
-│                                          │
-│  Content:         ✅ 100% Complete       │
+┌──────────────────────────────── ─ ─ ────── ─┐
+│   🎉 PORTFOLIO COMPLETE & READY 🎉         │
+│                                             │
+│  Content:         ✅ 100% Complete         │
 │  Design:          ✅ Modern & Professional
-│  Code Quality:    ✅ Production Ready    │
-│  Documentation:   ✅ Comprehensive      │
-│  Deployment:      ✅ Configured        │
-│                                          │
-│  Status: READY FOR PLACEMENT DRIVES      │
-│  Next Step: Personalize links & Deploy  │
-└─────────────────────────────────────────┘
+│  Code Quality:    ✅ Production Ready       │
+│  Documentation:   ✅ Comprehensive          │
+│  Deployment:      ✅ Configured             │
+│                                             │
+│  Status: READY FOR PLACEMENT DRIVES         │
+│  Next Step: Personalize links & Deploy      │
+└─────────────────────────────────────────    ┘
 ```
 
 ---
