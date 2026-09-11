@@ -102,7 +102,16 @@ PORT                 5000
 MONGO_URI            mongodb+srv://your_mongo_user:your_mongo_password@your_cluster.mongodb.net/portfolio?retryWrites=true&w=majority
 CLIENT_URL           (Leave blank for now - we'll update after Vercel deployment)
 NODE_ENV             production
+OWNER_EMAIL          akashshingare217@gmail.com
+SMTP_HOST            smtp.gmail.com
+SMTP_PORT            465
+SMTP_SECURE         true
+SMTP_USER            akashshingare217@gmail.com
+SMTP_PASS            (a Gmail app password, not your normal password)
+MAIL_FROM            akashshingare217@gmail.com
 ```
+
+The contact form sends a notification to `OWNER_EMAIL` and a confirmation reply to the visitor. For Gmail, enable 2-Step Verification, create an App Password, and use that 16-character value for `SMTP_PASS`. Add these variables in Render before testing the form.
 
 ⚠️ **Your MONGO_URI:** Check your `server/.env` file for the MongoDB connection string!
 
