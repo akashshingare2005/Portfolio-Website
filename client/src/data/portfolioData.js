@@ -155,7 +155,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
     github: "https://github.com/akashshingare2005",
-    demo: null,
+    demo: "https://brickbyte-property-valuation.onrender.com/contact/",
   },
   {
     id: 10,
