@@ -133,7 +133,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     github: "https://github.com/akashshingare2005",
-    demo: null,
+    demo: "https://skill-spark-ai-mauve.vercel.app/",
   },
   {
     id: 8,
