@@ -135,6 +135,19 @@ const Projects = () => {
           Total Projects: <span className="font-semibold text-cyan-300">{projects.length}</span> | Showing:{" "}
           <span className="font-semibold text-cyan-300">{filteredProjects.length}</span>
         </motion.div>
+
+        <motion.a
+          href="https://github.com/akashshingare2005"
+          target="_blank"
+          rel="noreferrer"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-6 flex items-center justify-center gap-2 text-sm font-medium text-cyan-300 transition hover:text-cyan-200"
+        >
+          <FaGithub size={18} /> See all projects on my GitHub account
+        </motion.a>
       </div>
     </section>
   );
